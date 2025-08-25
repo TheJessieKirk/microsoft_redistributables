@@ -35,6 +35,6 @@ Versions of DirectX found in this repository are:
 * 9.0c August 2008
 * 9.0c October 2008
 * 9.0c March 2009
-* 9.0c September 2009
+* 9.0c September 2009 ("August 2009")
 * 9.0c February 2010
 * 9.0c June 2010
