@@ -11,8 +11,12 @@ Users of older Microsoft Windows operating systems may require access to older v
 
 These can be a pain to find, so as I find them I shall upload them.
 
+# Contributions
+Please get in touch via GitHub if you have a version or language of these packages that you'd like to contribute.
+
 ## DirectX
 Versions of DirectX found in this repository are:
+* 5.0 July 1997 ("August 1997")
 * 7.0a November 1999
 * 8.0a November 2000
 * 8.1 October 2001 (English and Japanese)
