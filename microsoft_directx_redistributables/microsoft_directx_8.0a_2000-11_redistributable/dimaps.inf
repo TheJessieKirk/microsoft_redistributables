@@ -1,0 +1,571 @@
+;
+; Installs DirectX8 / DinputMapper image and configuration files
+;                     and adds some extra type defaults
+;
+;       Registry keys for supported devices are updated
+;       Image(png) and configuration files (ini) are added
+;       to the %11%\Microsoft\DirectX\Dinput directory
+;
+;       In order to add support for a new device:
+;       1. Add the configuration(.ini) and image(?.png)
+;               files to DiMap.Copy.Files section
+;       2. Add registry entries to DiMap.Add.Reg section
+;       
+[Version]
+Signature="$CHICAGO$"
+SetupClass=MEDIA
+
+[DefaultInstall]
+AddReg=DiMap.Add.Reg,DiType.Add.Reg
+CopyFiles=DiMap.Copy.Files
+
+[DefaultUninstall]
+DelFiles=DiMap.Copy.Files
+DelReg=DiMap.Add.Reg
+
+[DestinationDirs]
+DiMap.Copy.Files=11,%szDxDiDir% ; to System\%szDxDiDir%
+
+[SourceDisksNames]
+55="Directx 8.0","",1
+
+[SourceDisksFiles]
+%Dx8%=55
+
+[DiMap.Copy.Files]
+;--------G-U-I-L-L-E-M-O-T--------
+;Ferrari Racing Wheel
+;GlmRW.ini
+;GlmRW.png
+;Dual Analog
+GlmDA.ini
+GlmDA_G.ini
+GlmDA.png
+;Digital Gamepad
+GlmDigGP.ini
+GlmDGP_G.ini
+GlmDigGP.png
+
+;---------I-N-T-E-R-A-C-T-----------
+;Hammerhead
+Hammer.ini
+SV-262E1.png
+SV-262E3.png
+SV-262E4.png
+;RaiderPro Digital
+RaiderPD.ini
+SV2511.png
+SV2512.png
+;AxisPad
+IA3002.ini
+IA3002_G.ini
+IA3002_1.png
+IA3002_2.png
+
+;---------L-O-G-I-T-E-C-H-----------
+;Logi Wheel
+LGC202.ini
+LGC202.png
+;WingMan Extreme
+LGC207.ini
+LGC207.png
+;WingMan Gamepad (Black)
+LGC209.ini
+LGC209.png
+;WingMan RumblePad
+LGC20A.ini
+LGC20A.png
+;WingMan Formula Force
+LGC291.ini
+LGC291.png
+
+;--------M-I-C-R-O-S-O-F-T---------
+;SideWinder Force Feedback Wheel
+MS34.ini
+MS34_G.ini
+MS34.png
+MS34_01.png
+MS34_02.png
+MS34_03.png
+MS34_04.png
+MS34_05.png
+MS34_06.png
+MS34_07.png
+MS34_08.png
+;SideWinder Force Feedback 2 Joystick
+MS1B.ini
+MS1B.png
+MS1B_01.png
+MS1B_02.png
+MS1B_03.png
+MS1B_04.png
+MS1B_05.png
+MS1B_06.png
+MS1B_07.png
+MS1B_08.png
+MS1B_09.png
+MS1B_10.png
+;Sidewinder Silver Gamepad
+MS26.ini
+MS26.png
+MS26_01.png
+MS26_02.png
+MS26_03.png
+MS26_04.png
+MS26_05.png
+MS26_06.png
+MS26_07.png
+MS26_08.png
+;Sidewinder tilt
+MSE_G.ini
+MSE.ini
+MSE.png
+MSE_1.png
+MSE_2.png
+MSE_3.png
+MSE_4.png
+MSE_5.png
+MSE_6.png
+MSE_7.png
+MSE_8.png
+MSE_9.png
+MSE_10.png
+;Sidewinder PrecisionPro, game port and USB
+MS8.ini
+MS8_G.ini
+MS8.png
+MS8_1.png
+MS8_2.png
+MS8_3.png
+MS8_4.png
+MS8_5.png
+MS8_6.png
+MS8_7.png
+MS8_8.png
+MS8_9.png
+MS8_10.png
+;Sidewinder gamepad gameport 
+MS7_G.ini
+MS7.png
+MS7_8.png
+MS7_1.png
+MS7_2.png
+MS7_3.png
+MS7_4.png
+MS7_5.png
+MS7_6.png
+MS7_7.png
+MS7_9.png
+;Sidewinder FF Pro
+MS6.ini
+MS6_G.ini
+MS6.png
+MS6_4.png
+MS6_5.png
+MS6_6.png
+MS6_7.png
+MS6_8.png
+MS6_9.png
+MS6_10.png
+MS6_1.png
+MS6_2.png
+MS6_3.png
+;Sidewinder 3dPro
+MSF1F.ini
+MSF1F.png
+MSF1F_1.png
+MSF1F_2.png
+MSF1F_9.png
+MSF1F_10.png
+MSF1F_3.png
+MSF1F_4.png
+MSF1F_5.png
+MSF1F_6.png
+MSF1F_7.png
+MSF1F_8.png
+;SideWinder Precision 2 Joystick
+MS56.ini
+MS56.png
+MS56_1.png
+MS56_2.png
+MS56_3.png
+MS56_4.png
+MS56_5.png
+MS56_6.png
+MS56_7.png
+MS56_8.png
+MS56_9.png
+MS56_10.png
+;SideWinder Precision Racing Wheel USB version 1.0
+MSPRW.ini
+MSPRW.png
+MSPRW_1.png
+MSPRW_2.png
+MSPRW_3.png
+MSPRW_4.png
+MSPRW_5.png
+MSPRW_6.png
+MSPRW_7.png
+MSPRW_8.png
+;Sidewinder Dual Strike
+MS28.ini
+MS28_8.png
+MS28.png
+MS28_1.png
+MS28_2.png
+MS28_3.png
+MS28_4.png
+MS28_5.png
+MS28_6.png
+MS28_7.png
+;Microsoft SideWinder Plug and Play Gamepad
+MS27.png
+MS27.ini
+MS27_1.png
+MS27_2.png
+MS27_3.png
+MS27_4.png
+MS27_5.png
+;Microsoft SideWinder Game Voice
+MS3B.png
+MS3B.ini
+MS3B_1.png
+MS3B_2.png
+MS3B_3.png
+MS3B_4.png
+MS3B_a.png
+MS3B_c.png
+MS3B_m.png
+MS3B_t.png
+
+;--------G-R-A-V-I-S---------------
+;Gravis - Xterminator Digital Gamepad
+GR4003.ini
+GR4003.png
+;Gravis - Xterminator Dual Control
+GR3001.ini
+GR3001.png
+GR3001_G.ini
+
+; Gravis - Eliminator Gamepad Pro
+GR4005.ini
+GR4005.png
+; Gravis - GamePad pro USB
+GR4001.ini
+GR4001.png
+GR4001_G.ini
+GR4001_G.png
+
+;-------A-C-T--L-A-B-S------------
+; RS - Wheel
+ACT_RS.ini
+ACT_RS.png
+
+; RS Force - Wheel
+ACTC094.ini
+
+[DiMap.Add.Reg]
+;--------G-U-I-L-L-E-M-O-T--------
+;Ferrari Racing Wheel (USB)
+;HKLM,"%szMapFileReg%\VID_06F8&PID_0004",%szMapFileVal%,,"%11%\%szDxDiDir%\GlmRW.ini"
+
+;Dual Analog
+HKLM,"%szMapFileReg%\VID_06F8&PID_A300",%szMapFileVal%,,"%11%\%szDxDiDir%\GlmDA.ini"
+HKLM,"%szMapFileReg%\DualAnalogLeaderUSB",%szMapFileVal%,,"%11%\%szDxDiDir%\GlmDA.ini"
+HKLM,"%szMapFileReg%\Guillemot Dual Analog GamePad",%szMapFileVal%,,"%11%\%szDxDiDir%\GlmDA_G.ini"
+
+;Digital Gamepad
+;HID
+HKLM,"%szMapFileReg%\VID_06F8&PID_A301",%szMapFileVal%,,"%11%\%szDxDiDir%\GlmDigGP.ini"
+;USB drivers
+HKLM,"%szMapFileReg%\DIGITALGAMEPADUSB",%szMapFileVal%,,"%11%\%szDxDiDir%\GlmDigGP.ini"
+;Gameport
+HKLM,"%szMapFileReg%\GUILLEMOT DIGITAL GAMEPAD",%szMapFileVal%,,"%11%\%szDxDiDir%\GlmDGP_G.ini"
+
+;---------I-N-T-E-R-A-C-T-----------
+;Hammerhead
+HKLM,"%szMapFileReg%\InterAct SV-262 HammerHead Fx",%szMapFileVal%,,"%11%\%szDxDiDir%\Hammer.ini"
+
+;RaiderPro Digital (USB)
+HKLM,"%szMapFileReg%\VID_05FD&PID_0251",%szMapFileVal%,,"%11%\%szDxDiDir%\RaiderPD.ini"
+
+;RaiderPro Digital (Gameport)
+HKLM,"%szMapFileReg%\INTERACT SV-251 RAIDER DIGITAL",%szMapFileVal%,,"%11%\%szDxDiDir%\RaiderPD.ini"
+
+;AxisPad
+HKLM,"%szMapFileReg%\VID_05FD&PID_3002",%szMapFileVal%,,"%11%\%szDxDiDir%\IA3002.ini"
+
+;AxisPad (Gameport)
+HKLM,"%szMapFileReg%\InterAct I-73002 Dual Impact PC",%szMapFileVal%,,"%11%\%szDxDiDir%\IA3002_G.ini"
+
+;---------L-O-G-I-T-E-C-H-----------
+;Logi Yellow Wheel (USB)
+HKLM,%szMapFileReg%\VID_046D&PID_C202,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC202.ini"
+
+;Logi Yellow Wheel (Gameport)
+HKLM,%szMapFileReg%\VID_046D&PID_C028,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC202.ini"
+
+;Logi Yellow Wheel (Gameport Win9x)
+HKLM,%szMapFileReg%\LOGITECHWINGMANRALLY2,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC202.ini"
+
+;WingMan Extreme (USB)
+HKLM,%szMapFileReg%\VID_046D&PID_C207,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC207.ini"
+
+;WingMan Extreme (USB, Win2k)
+HKLM,%szMapFileReg%\VID_046D&PID_C029,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC207.ini"
+
+;WingMan Extreme (Gameport)
+HKLM,%szMapFileReg%\LOGITECHWINGMANEXTREMEDIGITAL3D,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC207.ini"
+
+;WingMan Gamepad (Black) (USB)
+HKLM,%szMapFileReg%\VID_046D&PID_C209,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC209.ini"
+
+;WingMan Gamepad (Black) (Gameport)
+HKLM,%szMapFileReg%\LOGITECHWINGMANGAMEPAD2,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC209.ini"
+
+;WingMan Gamepad (Black) (Gameport) default Win2k gameport
+HKLM,%szMapFileReg%\VID_046D&PID_C026,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC209.ini"
+
+;WingMan Formula Force (USB)
+HKLM,%szMapFileReg%\VID_046D&PID_C291,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC291.ini"
+
+;WingMan Formula Force (USB, Win9x)
+HKLM,%szMapFileReg%\LOGITECHWINGMANRALLYFORCEUSB,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC291.ini"
+
+;WingMan Formula Force (SERIAL, Win9x)
+HKLM,%szMapFileReg%\LOGITECHWINGMANRALLYFORCESERIAL,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC291.ini"
+
+;WingMan RumblePad
+HKLM,%szMapFileReg%\VID_046D&PID_C20A,%szMapFileVal%,,"%11%\%szDxDiDir%\LGC20A.ini"
+
+;--------M-I-C-R-O-S-O-F-T---------
+;SideWinder Force Feedback 2 Joystick
+HKLM,%szMapFileReg%\VID_045E&PID_001B,%szMapFileVal%,,"%11%\%szDxDiDir%\MS1B.ini"
+
+;Sidewinder Silver Gamepad
+HKLM,%szMapFileReg%\VID_045E&PID_0026,%szMapFileVal%,,"%11%\%szDxDiDir%\MS26.ini"
+
+;Sidewinder Freestyle Pro
+HKLM,%szMapFileReg%\VID_045E&PID_000D,%szMapFileVal%,,"%11%\%szDxDiDir%\MSE_G.ini"
+HKLM,%szMapFileReg%\VID_045E&PID_000E,%szMapFileVal%,,"%11%\%szDxDiDir%\MSE.ini"
+HKLM,"%szMapFileReg%\Microsoft SideWinder Freestyle Pro",%szMapFileVal%,,"%11%\%szDxDiDir%\MSE_G.ini"
+
+;Sidewinder Precision Pro
+HKLM,%szMapFileReg%\VID_045E&PID_0008,%szMapFileVal%,,"%11%\%szDxDiDir%\MS8.ini"
+HKLM,%szMapFileReg%\VID_045E&PID_0017,%szMapFileVal%,,"%11%\%szDxDiDir%\MS8_G.ini"
+HKLM,"%szMapFileReg%\Microsoft SideWinder Precision Pro",%szMapFileVal%,,"%11%\%szDxDiDir%\MS8_G.ini"
+
+;Sidewinder gamepad Gameport 
+HKLM,%szMapFileReg%\VID_045E&PID_0003,%szMapFileVal%,,"%11%\%szDxDiDir%\MS7_G.ini"
+HKLM,"%szMapFileReg%\Microsoft SideWinder game pad",%szMapFileVal%,,"%11%\%szDxDiDir%\MS7_G.ini"
+
+;Sidewinder FFPro
+HKLM,%szMapFileReg%\VID_045E&PID_0006,%szMapFileVal%,,"%11%\%szDxDiDir%\MS6.ini"
+HKLM,"%szMapFileReg%\Microsoft SideWinder Force Feedback Pro",%szMapFileVal%,,"%11%\%szDxDiDir%\MS6_G.ini"
+
+;SideWinder Force Feedback Wheel (USB)
+HKLM,%szMapFileReg%\VID_045E&PID_0034,%szMapFileVal%,,"%11%\%szDxDiDir%\MS34.ini"
+
+;SideWinder Force Feedback Wheel (Gameport)
+HKLM,%szMapFileReg%\VID_045E&PID_0015,%szMapFileVal%,,"%11%\%szDxDiDir%\MS34.ini"
+HKLM,"%szMapFileReg%\Microsoft SideWinder Force Feedback Wheel",%szMapFileVal%,,"%11%\%szDxDiDir%\MS34_G.ini"
+
+;Sidewinder 3dPro
+HKLM,%szMapFileReg%\VID_045E&PID_0F1F,%szMapFileVal%,,"%11%\%szDxDiDir%\MSF1F.ini"
+HKLM,"%szMapFileReg%\Microsoft SideWinder 3D Pro",%szMapFileVal%,,"%11%\%szDxDiDir%\MSF1F.ini"
+
+;SideWinder Precision 2 Joystick
+HKLM,%szMapFileReg%\VID_045E&PID_0038,%szMapFileVal%,,"%11%\%szDxDiDir%\MS56.ini"
+
+;SideWinder Precision Racing Wheel USB version 1.0
+HKLM,%szMapFileReg%\VID_045E&PID_001A,%szMapFileVal%,,"%11%\%szDxDiDir%\MSPRW.ini"
+
+;Sidewinder Dual Strike
+HKLM,%szMapFileReg%\VID_045E&PID_0028,%szMapFileVal%,,"%11%\%szDxDiDir%\MS28.ini"
+
+;Microsoft SideWinder Plug and Play Gamepad
+HKLM,%szMapFileReg%\VID_045E&PID_0027,%szMapFileVal%,,"%11%\%szDxDiDir%\MS27.ini"
+
+; Microsoft Game Voice - USB
+HKLM,%szMapFileReg%\VID_045E&PID_003B,%szMapFileVal%,,"%11%\%szDxDiDir%\MS3B.ini"
+
+;--------G-R-A-V-I-S---------------
+;Gravis - Xterminator Digital Gamepad
+HKLM,%szMapFileReg%\VID_047D&PID_4003,%szMapFileVal%,,"%11%\%szDxDiDir%\GR4003.ini"
+HKLM,"%szMapFileReg%\Gravis Xterminator Digital GamePad",%szMapFileVal%,,"%11%\%szDxDiDir%\GR4003.ini"
+
+;Gravis - Xterminator Dual Control
+HKLM,%szMapFileReg%\VID_047D&PID_3001,%szMapFileVal%,,"%11%\%szDxDiDir%\GR3001.ini"
+HKLM,"%szMapFileReg%\Gravis Xterminator Dual Control",%szMapFileVal%,,"%11%\%szDxDiDir%\GR3001_G.ini"
+
+;Gravis - Eliminator Gamepad Pro
+HKLM,%szMapFileReg%\VID_047D&PID_4005,%szMapFileVal%,,"%11%\%szDxDiDir%\GR4005.ini"
+
+;Gravis - GamePad pro USB
+HKLM,%szMapFileReg%\VID_0428&PID_4001,%szMapFileVal%,,"%11%\%szDxDiDir%\GR4001.ini"
+HKLM,"%szMapFileReg%\Gravis GamePad Pro",%szMapFileVal%,,"%11%\%szDxDiDir%\GR4001.ini"
+
+;-------A-C-T--L-A-B-S------------
+; RS - Wheel
+HKLM,"%szMapFileReg%\ACT LABS RS",%szMapFileVal%,,"%11%\%szDxDiDir%\ACT_RS.ini"
+
+; RS Force - Wheel
+HKLM,%szMapFileReg%\VID_061C&PID_C084,%szMapFileVal%,,"%11%\%szDxDiDir%\ACTC094.ini"
+HKLM,%szMapFileReg%\VID_061C&PID_C094,%szMapFileVal%,,"%11%\%szDxDiDir%\ACTC094.ini"
+
+
+[DiType.Add.Reg]
+; Devices which used to have specific matches in joystick.inf
+ 
+; ThrustMaster Top Gun USB Joystick
+HKLM,%szJoyOEMReg%\VID_044F&PID_A0A0,OEMName,2,%USB\VID_044F&PID_A0A0.DeviceDesc%
+HKLM,%szJoyOEMReg%\VID_044F&PID_A0A0,OEMData,3,02,00,00,10,04,00,00,00
+HKLM,%szJoyOEMReg%\VID_044F&PID_A0A0,OEMCallout,2,"joyhid.vxd"
+
+; ThrustMaster Top Gun USB Joystick (rev2)
+HKLM,%szJoyOEMReg%\VID_044F&PID_A0A1,OEMName,2,%USB\VID_044F&PID_A0A1.DeviceDesc%
+HKLM,%szJoyOEMReg%\VID_044F&PID_A0A1,OEMData,3,02,00,00,10,04,00,00,00
+HKLM,%szJoyOEMReg%\VID_044F&PID_A0A1,OEMCallout,2,"joyhid.vxd"
+
+; NEC PK-GP201 PlayStick
+HKLM,%szJoyOEMReg%\VID_044F&PID_A201,OEMName,2,%USB\VID_044F&PID_A201.DeviceDesc%
+HKLM,%szJoyOEMReg%\VID_044F&PID_A201,OEMData,3,02,00,00,10,04,00,00,00
+HKLM,%szJoyOEMReg%\VID_044F&PID_A201,OEMCallout,2,"joyhid.vxd"
+
+; NEC PK-GP301 Driving Wheel
+HKLM,%szJoyOEMReg%\VID_044F&PID_A01B,OEMName,2,%USB\VID_044F&PID_A01B.DeviceDesc%
+HKLM,%szJoyOEMReg%\VID_044F&PID_A01B,OEMData,3,40,00,00,10,04,00,00,00
+HKLM,%szJoyOEMReg%\VID_044F&PID_A01B,OEMCallout,2,"joyhid.vxd"
+
+; Genius USB Joystick
+HKLM,%szJoyOEMReg%\VID_0458&PID_1001,OEMName,2,%USB\VID_0458&PID_1001.DeviceDesc%
+HKLM,%szJoyOEMReg%\VID_0458&PID_1001,OEMData,3,03,00,08,10,08,00,00,00
+HKLM,%szJoyOEMReg%\VID_0458&PID_1001,OEMCallout,2,"joyhid.vxd"
+
+; Genius USB Game Pad
+HKLM,%szJoyOEMReg%\VID_0458&PID_1002,OEMName,2,%USB\VID_0458&PID_1002.DeviceDesc%
+HKLM,%szJoyOEMReg%\VID_0458&PID_1002,OEMData,3,20,00,00,10,08,00,00,00
+HKLM,%szJoyOEMReg%\VID_0458&PID_1002,OEMCallout,2,"joyhid.vxd"
+
+; Genius USB Joystick (another)
+HKLM,%szJoyOEMReg%\VID_0458&PID_1004,OEMName,2,%USB\VID_0458&PID_1004.DeviceDesc%
+HKLM,%szJoyOEMReg%\VID_0458&PID_1004,OEMData,3,03,00,08,10,08,00,00,00
+HKLM,%szJoyOEMReg%\VID_0458&PID_1004,OEMCallout,2,"joyhid.vxd"
+
+; Guillemot Jet Leader USB Joystick
+;HKLM,%szJoyOEMReg%\VID_06F8&PID_0002,OEMName,2,%USB\VID_06F8&PID_0002.DeviceDesc%
+;HKLM,%szJoyOEMReg%\VID_06F8&PID_0002,OEMData,3,02,00,00,10,08,00,00,00
+;HKLM,%szJoyOEMReg%\VID_06F8&PID_0002,OEMCallout,2,"joyhid.vxd"
+
+
+; Devices that benefit from overrides
+
+;
+; ACT Labs Gun System
+HKLM,"%szMapFileReg%\ACT LABS GS",Flags2,3,1A,03,00,00
+
+; Gravis Exterminator
+HKLM,%szMapFileReg%\VID_047D&PID_4003,Flags2,3,15,02,00,00
+HKLM,"%szMapFileReg%\Gravis Xterminator Digital GamePad",Flags2,3,15,02,00,00
+
+; Gravis Stinger
+HKLM,%szMapFileReg%\"Gravis Stinger",Flags2,3,15,02,00,00
+
+; Guillemot Dual Analog Gamepad
+HKLM,"%szMapFileReg%\VID_06F8&PID_A300",Flags2,3,15,02,00,00
+HKLM,"%szMapFileReg%\DualAnalogLeaderUSB",Flags2,3,15,02,00,00
+HKLM,"%szMapFileReg%\Guillemot Dual Analog GamePad",Flags2,3,15,02,00,00
+
+; Guillemot Ferrari wheel (non-FF)
+HKLM,"%szMapFileReg%\VID_06F8&PID_A303",Flags2,3,16,02,00,00
+HKLM,"%szMapFileReg%\Guillemot Racing Wheel",Flags2,3,16,02,00,00
+
+; Interact SV-262 HammerHead FX
+HKLM,%szMapFileReg%\"Interact SV-262 HammerHead FX",Flags2,3,15,02,00,00
+
+; Interact PC Power Pad Pro
+HKLM,%szMapFileReg%\"Interact PC PowerPad Pro",Flags2,3,15,02,00,00
+
+; Interact Axis Pad - USB
+HKLM,%szMapFileReg%\VID_05FD&PID_3002,Flags2,3,15,02,00,00
+; Interact AxisPad  - Gameport
+HKLM,"%szMapFileReg%\InterAct I-73002 Dual Impact PC",Flags2,3,15,02,00,00
+
+; Interact Pro Pad 6
+HKLM,%szMapFileReg%\"ProPad 6",Flags2,3,15,02,00,00
+
+; Logitech Wingman Extreme Digital Gameport WDM
+HKLM,%szMapFileReg%\VID_046D&PID_C020,Flags2,3,00,00,20,00
+
+; Logitech Wingman Interceptor Gameport WDM
+HKLM,%szMapFileReg%\VID_046D&PID_C023,Flags2,3,00,00,20,00
+
+; Logitech Wingman Gamepad (Black) - USB
+HKLM,%szMapFileReg%\VID_046D&PID_C209,Flags2,3,15,02,00,00
+
+; Logitech Wingman Gamepad Extreme - USB
+HKLM,%szMapFileReg%\VID_046D&PID_C208,Flags2,3,15,03,00,00
+; Logitech WingMan Extreme - Gameport WDM
+HKLM,%szMapFileReg%\VID_046D&PID_C027, Flags2,3,15,03,00,00
+; Logitech Wingman Gamepad Extreme - Gameport VxD
+HKLM,%szMapFileReg%\"LogitechWingmanGamepadExtreme",Flags2,3,15,03,00,00
+
+; Logitech CyberMan2
+HKLM,%szMapFileReg%\"LogitechCyberMan2",Flags2,3,18,03,00,00
+
+; Logitech Wingman Formula (Yellow) - USB
+HKLM,%szMapFileReg%\VID_046D&PID_C202,Flags2,3,16,03,00,00
+
+; Logitech Wingman Formula Force - USB
+HKLM,%szMapFileReg%\VID_046D&PID_C291,Flags2,3,16,03,00,00
+
+; Logitech Wingman Rumblepad
+HKLM,%szMapFileReg%\VID_046D&PID_C20A,Flags2,3,15,02,00,00
+
+; Microsoft Freestyle Pro - USB
+HKLM,%szMapFileReg%\VID_045E&PID_000E,Flags2,3,15,03,00,00
+; Microsoft Freestyle Pro - Gameport
+HKLM,%szMapFileReg%\VID_045E&PID_000D,Flags2,3,15,03,00,00
+HKLM,"%szMapFileReg%\Microsoft SideWinder Freestyle Pro",Flags2,3,15,03,00,00
+
+; Microsoft Force Feedback Wheel - USB
+HKLM,%szMapFileReg%\VID_045E&PID_0034,Flags2,3,16,03,00,00
+; Microsoft Force Feedback Wheel - Gameport
+HKLM,%szMapFileReg%\VID_045E&PID_0015,Flags2,3,16,03,00,00
+HKLM,"%szMapFileReg%\Microsoft SideWinder Force Feedback Wheel",Flags2,3,16,03,00,00
+
+; Microsoft Precision Racing Wheel - USB
+HKLM,%szMapFileReg%\VID_045E&PID_001A,Flags2,3,16,03,00,00
+
+; Microsoft Game Voice - USB
+HKLM,%szMapFileReg%\VID_045E&PID_003B,Flags2,3,19,04,00,00
+
+; Saitek Cyborg 3d Gamepad (A)
+HKLM,%szMapFileReg%\VID_06A3&PID_0104,Flags2,3,15,02,00,00
+; Saitek Cyborg 3d Gamepad (D)
+HKLM,%szMapFileReg%\VID_06A3&PID_0102,Flags2,3,15,02,00,00
+; Saitek Cyborg 3d Gamepad (F)
+HKLM,%szMapFileReg%\VID_06A3&PID_0101,Flags2,3,15,02,00,00
+
+; SpaceTec SpaceOrb
+HKLM,%szMapFileReg%\"Spaceball",Flags2,3,18,03,00,00
+
+
+[Strings]
+;Non-Localizable strings
+szDxDiDir="DirectX\Dinput"
+szJoyOEMReg="System\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM"
+szMapFileReg="System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput"
+szMapFileVal="OEMMapFile"
+
+
+;Localizable Strings
+Dx8="DirectX 8.0"
+USB\VID_044F&PID_A0A0.DeviceDesc="ThrustMaster Top Gun USB Joystick"
+USB\VID_044F&PID_A0A1.DeviceDesc="ThrustMaster Top Gun USB Joystick (rev2)"
+USB\VID_044F&PID_A201.DeviceDesc="NEC PK-GP201 PlayStick"
+USB\VID_044F&PID_A01B.DeviceDesc="NEC PK-GP301 Driving Wheel"
+USB\VID_0458&PID_1001.DeviceDesc="Genius USB Joystick"
+USB\VID_0458&PID_1002.DeviceDesc="Genius USB Game Pad"
+USB\VID_0458&PID_1004.DeviceDesc="Genius USB Joystick"
+USB\VID_06F8&PID_0002.DeviceDesc="Guillemot Jet Leader USB Joystick"

@@ -1,0 +1,14 @@
+[version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+AddReg=add.reg
+
+[add.reg]
+HKLM,"%DX%"
+HKLM,"%DX%","Version",,"4.08.00.0400"
+HKLM,"%DX%","RC",,"14"
+
+[Strings]
+DX = "Software\Microsoft\DirectX"
+
