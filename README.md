@@ -4,7 +4,7 @@ __NOTE: This repository is 100% UNOFFICIAL and is in no way associated with Micr
 ## Legal
 "Microsoft", "DirectX" and "Windows" are ©,® and/or ™ [Microsoft Corporation](https://www.microsoft.com/).
 
-Software licenses for each package is provided in this repository and is also bundled with every software package.
+Software licenses for each package are provided in this repository and is also bundled with every software package.
 
 # Rationale
 Users of older Microsoft Windows operating systems may require access to older versions of Microsoft redistributables in order to run their games and other apps.
