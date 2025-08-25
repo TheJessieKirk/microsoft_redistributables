@@ -16,6 +16,7 @@ Please get in touch via GitHub if you have a version or language of these packag
 
 ## DirectX
 Versions of DirectX found in this repository are:
+* 2.0a May 1996
 * 5.0 July 1997 ("August 1997")
 * 7.0a November 1999
 * 8.0a November 2000
