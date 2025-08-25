@@ -12,7 +12,7 @@ Users of older Microsoft Windows operating systems may require access to older v
 These can be a pain to find, so as I find them I shall upload them.
 
 # Contributions
-Please get in touch via GitHub if you have a version or language of these packages that you'd like to contribute.
+Please get in touch via GitHub if you have a version or language of these packages that you'd like to contribute, or an setup version of a package that I only have the binaries for.
 
 ## DirectX
 Versions of DirectX found in this repository are:
