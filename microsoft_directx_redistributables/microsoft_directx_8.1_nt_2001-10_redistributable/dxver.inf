@@ -1,0 +1,15 @@
+[version]
+Signature="$Windows NT$"
+
+[DefaultInstall]
+AddReg=add.reg
+
+[add.reg]
+HKLM,"%DX%"
+HKLM,"%DX%","Version",,"4.08.01.0881"
+HKLM,"%DX%","RC",,"7"
+HKLM,"%DX%","InstalledVersion",0x00030001,00,00,00,08,00,00,00,01
+
+[Strings]
+DX = "Software\Microsoft\DirectX"
+
