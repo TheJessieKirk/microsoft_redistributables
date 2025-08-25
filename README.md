@@ -13,7 +13,7 @@ These can be a pain to find, so as I find them I shall upload them.
 
 ## DirectX
 Versions of DirectX found in this repository are:
-* 7.0 January 2001
+* 7.0a November 1999
 * 8.0a November 2000
 * 8.1 October 2001 (English and Japanese)
 * 8.1 NT October 2001 (English and Japanese)
