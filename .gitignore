@@ -1,2 +1,4 @@
-﻿desktop.ini
+﻿Releases/*
+*.bak
+desktop.ini
 Thumbs.db
