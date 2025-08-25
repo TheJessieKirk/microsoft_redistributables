@@ -1,4 +1,4 @@
-# Microsoft Redistributables
+﻿# Microsoft Redistributables
 __NOTE: This repository is 100% UNOFFICIAL and is in no way associated with Microsoft or any of their affiliates or subsidiaries.__
 
 ## Legal
@@ -14,6 +14,7 @@ These can be a pain to find, so as I find them I shall upload them.
 ## DirectX
 Versions of DirectX found in this repository are:
 * 9.0c July 2004
+* 9.0c December 2004
 * 9.0c July 2005
 * 9.0c September 2005
 * 9.0c December 2005
