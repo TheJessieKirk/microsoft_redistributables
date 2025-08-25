@@ -1,4 +1,4 @@
-﻿Get-ChildItem -LiteralPath $PSScriptRoot -Recurse | Where {
+﻿Get-ChildItem -LiteralPath "microsoft_directx_redistributables" -Recurse | Where {
   $_.Name -cne $_.Name.ToLower()
 } | ForEach-Object {
   $tn="$($_.Name)-temp";
